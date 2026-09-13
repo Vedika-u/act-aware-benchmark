@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 5%;
+    --foreground: 210 40% 92%;
+
+    --card: 220 45% 8%;
+    --card-foreground: 210 40% 92%;
+
+    --popover: 220 45% 10%;
+    --popover-foreground: 210 40% 92%;
+
+    --primary: 220 80% 40%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 40% 14%;
+    --secondary-foreground: 210 40% 85%;
+
+    --muted: 220 30% 12%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 200 100% 50%;
+    --accent-foreground: 220 50% 5%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 16%;
+    --input: 220 30% 16%;
+    --ring: 220 80% 40%;
+
+    --radius: 0.5rem;
+
+    --navy: 220 60% 12%;
+    --navy-deep: 220 65% 6%;
+    --cyan: 195 100% 50%;
+    --cyan-muted: 195 60% 30%;
+    --success: 145 63% 42%;
+    --warning: 38 92% 50%;
+    --critical: 0 84% 60%;
+
+    --glass-bg: 220 45% 8%;
+    --glass-border: 220 30% 20%;
+    --glass-highlight: 220 60% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-glass-border rounded-lg;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  .glass-card-highlight {
+    @apply glass-card;
+    box-shadow: 0 4px 30px rgba(15, 82, 186, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  .kpi-card {
+    @apply glass-card p-5 space-y-2;
+  }
+  .status-chip {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .status-critical {
+    @apply status-chip bg-critical/15 text-critical;
+  }
+  .status-warning {
+    @apply status-chip bg-warning/15 text-warning;
+  }
+  .status-success {
+    @apply status-chip bg-success/15 text-success;
+  }
+  .status-info {
+    @apply status-chip bg-accent/15 text-accent;
+  }
+}

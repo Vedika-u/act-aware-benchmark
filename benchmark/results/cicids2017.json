@@ -1,0 +1,247 @@
+{
+  "dataset": "cicids2017",
+  "generated_at": "2026-09-13T17:31:14.436077+00:00",
+  "train_attack_ratio": 0.19681666666666667,
+  "test_attack_ratio": 0.1968,
+  "n_train": 120000,
+  "n_test": 30000,
+  "n_features": 70,
+  "runs": [
+    {
+      "contamination_used": 0.15,
+      "threshold_default": 0.5,
+      "threshold_best_f1": 0.1901,
+      "metrics_at_default_threshold": {
+        "precision": 0.3186,
+        "recall": 0.011,
+        "f1": 0.0213,
+        "confusion_matrix": [
+          [
+            23957,
+            139
+          ],
+          [
+            5839,
+            65
+          ]
+        ]
+      },
+      "metrics_at_best_f1_threshold": {
+        "precision": 0.5263,
+        "recall": 0.4551,
+        "f1": 0.4881,
+        "confusion_matrix": [
+          [
+            21678,
+            2418
+          ],
+          [
+            3217,
+            2687
+          ]
+        ]
+      },
+      "roc_auc": 0.6998,
+      "pr_auc": 0.4073,
+      "recall_by_category": {
+        "Botnet": {
+          "recall": 0.0,
+          "n_samples": 21
+        },
+        "Brute Force": {
+          "recall": 0.0,
+          "n_samples": 147
+        },
+        "DDoS": {
+          "recall": 0.0,
+          "n_samples": 1358
+        },
+        "DoS": {
+          "recall": 0.0243,
+          "n_samples": 2670
+        },
+        "PortScan": {
+          "recall": 0.0,
+          "n_samples": 1685
+        },
+        "Web Attack": {
+          "recall": 0.0,
+          "n_samples": 23
+        }
+      },
+      "recall_by_category_best_f1": {
+        "Botnet": {
+          "recall": 0.0,
+          "n_samples": 21
+        },
+        "Brute Force": {
+          "recall": 0.0,
+          "n_samples": 147
+        },
+        "DDoS": {
+          "recall": 0.6163,
+          "n_samples": 1358
+        },
+        "DoS": {
+          "recall": 0.6918,
+          "n_samples": 2670
+        },
+        "PortScan": {
+          "recall": 0.0012,
+          "n_samples": 1685
+        },
+        "Web Attack": {
+          "recall": 0.0435,
+          "n_samples": 23
+        }
+      },
+      "per_model_scores": {
+        "iforest": {
+          "model": "iforest",
+          "roc_auc": 0.6937,
+          "pr_auc": 0.3505
+        },
+        "lof": {
+          "model": "lof",
+          "roc_auc": 0.4408,
+          "pr_auc": 0.1681
+        },
+        "hbos": {
+          "model": "hbos",
+          "roc_auc": 0.7035,
+          "pr_auc": 0.4697
+        }
+      }
+    },
+    {
+      "contamination_used": 0.19681666666666667,
+      "threshold_default": 0.5,
+      "threshold_best_f1": 0.1901,
+      "metrics_at_default_threshold": {
+        "precision": 0.3186,
+        "recall": 0.011,
+        "f1": 0.0213,
+        "confusion_matrix": [
+          [
+            23957,
+            139
+          ],
+          [
+            5839,
+            65
+          ]
+        ]
+      },
+      "metrics_at_best_f1_threshold": {
+        "precision": 0.5263,
+        "recall": 0.4551,
+        "f1": 0.4881,
+        "confusion_matrix": [
+          [
+            21678,
+            2418
+          ],
+          [
+            3217,
+            2687
+          ]
+        ]
+      },
+      "roc_auc": 0.6998,
+      "pr_auc": 0.4073,
+      "recall_by_category": {
+        "Botnet": {
+          "recall": 0.0,
+          "n_samples": 21
+        },
+        "Brute Force": {
+          "recall": 0.0,
+          "n_samples": 147
+        },
+        "DDoS": {
+          "recall": 0.0,
+          "n_samples": 1358
+        },
+        "DoS": {
+          "recall": 0.0243,
+          "n_samples": 2670
+        },
+        "PortScan": {
+          "recall": 0.0,
+          "n_samples": 1685
+        },
+        "Web Attack": {
+          "recall": 0.0,
+          "n_samples": 23
+        }
+      },
+      "recall_by_category_best_f1": {
+        "Botnet": {
+          "recall": 0.0,
+          "n_samples": 21
+        },
+        "Brute Force": {
+          "recall": 0.0,
+          "n_samples": 147
+        },
+        "DDoS": {
+          "recall": 0.6163,
+          "n_samples": 1358
+        },
+        "DoS": {
+          "recall": 0.6918,
+          "n_samples": 2670
+        },
+        "PortScan": {
+          "recall": 0.0012,
+          "n_samples": 1685
+        },
+        "Web Attack": {
+          "recall": 0.0435,
+          "n_samples": 23
+        }
+      },
+      "per_model_scores": {
+        "iforest": {
+          "model": "iforest",
+          "roc_auc": 0.6937,
+          "pr_auc": 0.3505
+        },
+        "lof": {
+          "model": "lof",
+          "roc_auc": 0.4408,
+          "pr_auc": 0.1681
+        },
+        "hbos": {
+          "model": "hbos",
+          "roc_auc": 0.7035,
+          "pr_auc": 0.4697
+        }
+      }
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "source": "Xu & Liu (2025), 'Robust Anomaly Detection in Network Traffic: Evaluating Machine Learning Models on CICIDS2017', arXiv:2506.19877, Table II",
+      "metric": "precision (LOF, Overall Test Set, trained on benign traffic only)",
+      "value": 0.9106
+    },
+    {
+      "source": "Xu & Liu (2025), arXiv:2506.19877, Table II",
+      "metric": "recall (LOF, Overall Test Set)",
+      "value": 0.8341
+    },
+    {
+      "source": "Xu & Liu (2025), arXiv:2506.19877, Table II",
+      "metric": "f1 (LOF, Overall Test Set)",
+      "value": 0.8706
+    },
+    {
+      "source": "Xu & Liu (2025), arXiv:2506.19877, Table III",
+      "metric": "recall (LOF, Unknown-Attack-Only Test Set \u2014 generalization to novel attack types)",
+      "value": 0.837,
+      "caveat": "Their 'unknown attack' split excludes 3 specific attack types from training; this benchmark's fit/test split (docs/03-eval-harness.md) does not hold out specific attack types, so treat as directionally comparable only."
+    }
+  ],
+  "sampling_note": "Stratified subsample of 150,000 rows out of the full 2,830,743-row CICIDS2017 dataset (see docs/01-datasets.md's size note). LOF's fit cost does not scale linearly with row count \u2014 an empirical timing check found fit+score on a 500,000-row subsample did not complete in a reasonable time (killed after ~12 minutes with no result), while 150,000 rows completed end-to-end in under 2 minutes, so 150,000 was chosen as a tractable, verified size rather than guessed. Sampling was stratified by attack category so relative rarity is preserved; extremely rare categories (Infiltration: 36 rows, Heartbleed: 11 rows in the FULL dataset) may end up with 0-few test-set samples purely from that rarity, independent of subsampling \u2014 see recall_by_category's n_samples for each run."
+}

@@ -1,0 +1,211 @@
+{
+  "dataset": "nsl_kdd",
+  "generated_at": "2026-09-13T17:25:36.671531+00:00",
+  "train_attack_ratio": 0.4654171925730117,
+  "test_attack_ratio": 0.5692423704755145,
+  "n_train": 125973,
+  "n_test": 22544,
+  "n_features": 121,
+  "runs": [
+    {
+      "contamination_used": 0.15,
+      "threshold_default": 0.5,
+      "threshold_best_f1": 0.0749,
+      "metrics_at_default_threshold": {
+        "precision": 0.9841,
+        "recall": 0.0048,
+        "f1": 0.0096,
+        "confusion_matrix": [
+          [
+            9710,
+            1
+          ],
+          [
+            12771,
+            62
+          ]
+        ]
+      },
+      "metrics_at_best_f1_threshold": {
+        "precision": 0.7856,
+        "recall": 0.9519,
+        "f1": 0.8608,
+        "confusion_matrix": [
+          [
+            6377,
+            3334
+          ],
+          [
+            617,
+            12216
+          ]
+        ]
+      },
+      "roc_auc": 0.8777,
+      "pr_auc": 0.8853,
+      "recall_by_category": {
+        "DoS": {
+          "recall": 0.0008,
+          "n_samples": 7460
+        },
+        "Probe": {
+          "recall": 0.0227,
+          "n_samples": 2421
+        },
+        "R2L": {
+          "recall": 0.0003,
+          "n_samples": 2885
+        },
+        "U2R": {
+          "recall": 0.0,
+          "n_samples": 67
+        }
+      },
+      "recall_by_category_best_f1": {
+        "DoS": {
+          "recall": 0.9991,
+          "n_samples": 7460
+        },
+        "Probe": {
+          "recall": 1.0,
+          "n_samples": 2421
+        },
+        "R2L": {
+          "recall": 0.7886,
+          "n_samples": 2885
+        },
+        "U2R": {
+          "recall": 1.0,
+          "n_samples": 67
+        }
+      },
+      "per_model_scores": {
+        "iforest": {
+          "model": "iforest",
+          "roc_auc": 0.8503,
+          "pr_auc": 0.856
+        },
+        "lof": {
+          "model": "lof",
+          "roc_auc": 0.599,
+          "pr_auc": 0.6492
+        },
+        "hbos": {
+          "model": "hbos",
+          "roc_auc": 0.8994,
+          "pr_auc": 0.9102
+        }
+      }
+    },
+    {
+      "contamination_used": 0.4654171925730117,
+      "threshold_default": 0.5,
+      "threshold_best_f1": 0.0749,
+      "metrics_at_default_threshold": {
+        "precision": 0.9841,
+        "recall": 0.0048,
+        "f1": 0.0096,
+        "confusion_matrix": [
+          [
+            9710,
+            1
+          ],
+          [
+            12771,
+            62
+          ]
+        ]
+      },
+      "metrics_at_best_f1_threshold": {
+        "precision": 0.7856,
+        "recall": 0.9519,
+        "f1": 0.8608,
+        "confusion_matrix": [
+          [
+            6377,
+            3334
+          ],
+          [
+            617,
+            12216
+          ]
+        ]
+      },
+      "roc_auc": 0.8777,
+      "pr_auc": 0.8853,
+      "recall_by_category": {
+        "DoS": {
+          "recall": 0.0008,
+          "n_samples": 7460
+        },
+        "Probe": {
+          "recall": 0.0227,
+          "n_samples": 2421
+        },
+        "R2L": {
+          "recall": 0.0003,
+          "n_samples": 2885
+        },
+        "U2R": {
+          "recall": 0.0,
+          "n_samples": 67
+        }
+      },
+      "recall_by_category_best_f1": {
+        "DoS": {
+          "recall": 0.9991,
+          "n_samples": 7460
+        },
+        "Probe": {
+          "recall": 1.0,
+          "n_samples": 2421
+        },
+        "R2L": {
+          "recall": 0.7886,
+          "n_samples": 2885
+        },
+        "U2R": {
+          "recall": 1.0,
+          "n_samples": 67
+        }
+      },
+      "per_model_scores": {
+        "iforest": {
+          "model": "iforest",
+          "roc_auc": 0.8503,
+          "pr_auc": 0.856
+        },
+        "lof": {
+          "model": "lof",
+          "roc_auc": 0.599,
+          "pr_auc": 0.6492
+        },
+        "hbos": {
+          "model": "hbos",
+          "roc_auc": 0.8994,
+          "pr_auc": 0.9102
+        }
+      }
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "source": "Rao & Mane (2021), 'Zero-shot learning approach to adaptive Cybersecurity using Explainable AI', arXiv:2106.14647",
+      "metric": "precision (attack class, Isolation Forest only)",
+      "value": 0.92,
+      "caveat": "Evaluated on NSL-KDD training data itself (fit+score on the same set), not the KDDTest+ generalization split this benchmark uses \u2014 not directly comparable to this benchmark's test-set numbers, included as a rough sanity check only."
+    },
+    {
+      "source": "Rao & Mane (2021), 'Zero-shot learning approach to adaptive Cybersecurity using Explainable AI', arXiv:2106.14647",
+      "metric": "recall (attack class, Isolation Forest only)",
+      "value": 0.89,
+      "caveat": "Same caveat as above."
+    },
+    {
+      "source": "Rao & Mane (2021), 'Zero-shot learning approach to adaptive Cybersecurity using Explainable AI', arXiv:2106.14647",
+      "metric": "f1 (attack class, Isolation Forest only)",
+      "value": 0.91,
+      "caveat": "Same caveat as above."
+    }
+  ]
+}

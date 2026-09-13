@@ -1,0 +1,37 @@
+# --- Reference clones (own git history/remote, not part of this repo) ---
+# See docs/00-overview.md: these are read-only reference clones of the
+# original hackathon repos. Clone them separately if you need to browse
+# them locally; they are intentionally not tracked here.
+/backend/
+/frontend/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Node ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# --- Datasets (large, downloaded separately — see docs/01-datasets.md) ---
+benchmark/data/*/raw/*.csv
+benchmark/data/*/raw/*.txt
+
+# --- Local agent state ---
+.claude/
+
+# --- Editors / OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# --- Env / secrets ---
+.env
+!.env.example
