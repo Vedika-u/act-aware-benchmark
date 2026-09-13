@@ -240,10 +240,10 @@ _(This benchmark and dashboard — the original Act Aware hackathon platform in
 `backend/`/`frontend/` was a team effort, credited in
 [`backend/README.md`](backend/README.md).)_
 
-- GitHub: `<add-your-github-url>`
-- LinkedIn: `<add-your-linkedin-url>`
-- Portfolio: `<add-your-portfolio-url>`
-- Email: `<add-your-email>`
+- GitHub: [github.com/Vedika-u](https://github.com/Vedika-u)
+- LinkedIn: [vedika-utturwar-b37b75336](https://www.linkedin.com/in/vedika-utturwar-b37b75336)
+- Portfolio: `<add-your-portfolio-url>` (repo: [Vedika-u/vedika-utturwar](https://github.com/Vedika-u/vedika-utturwar))
+- Email: [btbti24094_vedika@banasthali.in](mailto:btbti24094_vedika@banasthali.in)
 
 ## License
 
